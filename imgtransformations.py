@@ -35,4 +35,8 @@ def rotate(img, angle, rotPoint=None):
 rotate = rotate(cat, 90)
 cv.imshow('Rotated', rotate)
 
+# flipping
+flip = cv.flip(cat, -1) # 0 -> vertical, 1 -> horizontal, -1 -> both ways
+cv.imshow('flip', flip)
+ 
 cv.waitKey(0)
